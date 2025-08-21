@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%; /* ocupa toda a largura */
+  height: 100vh; /* ocupa toda a altura da tela */
+  box-sizing: border-box;
+  background-color: #f0e5e5;
+  font-family: sans-serif;
+  margin-top: 80px;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* os cards ficam embaixo do outro */
+  gap: 20px;
+  color: black;
+  border-right: 2px solid #ccc;
+  width: 30%;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+
+
