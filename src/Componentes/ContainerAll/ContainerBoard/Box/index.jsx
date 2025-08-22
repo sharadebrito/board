@@ -1,12 +1,13 @@
 import styles from "./styles.module.css";
 
-export function Box({ titulo, descrição }) {
-
+export function Box({ titulo, descrição, excluir, index }) {
   return (
     <div className={styles.box}>
       <div className={styles.titulo}>
         <h1>{titulo}</h1>
-        <button title="Excluir tarefa">X</button>
+        <button onClick={() => excluir(index)} title="Excluir card">
+          X
+        </button>
       </div>
 
       <p>{descrição}</p>
@@ -19,3 +20,4 @@ export function Box({ titulo, descrição }) {
     </div>
   );
 }
+

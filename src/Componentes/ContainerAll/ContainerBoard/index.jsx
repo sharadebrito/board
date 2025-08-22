@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Box } from "./Box";
 import styles from "./styles.module.css";
 
@@ -58,14 +59,28 @@ const listaTask = [
 ];
 
 export function ContainerBoard() {
+  const [lista, setLista] = useState(listaTask);
+
+  function excluir(indice) {
+    const listAtt = lista.filter((_, i) => i !== indice);
+    setLista(listAtt);
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.column}>
         <h1>To Do</h1>
 
-        {listaTask.map((card) => {
+        {lista.map((card, index) => {
           if (card.status == "To Do") {
-            return <Box titulo={card.titulo} descrição={card.descrição} />;
+            return (
+              <Box
+                titulo={card.titulo}
+                descrição={card.descrição}
+                excluir={excluir}
+                index={index}
+              />
+            );
           }
         })}
       </div>
@@ -73,19 +88,33 @@ export function ContainerBoard() {
       <div className={styles.column}>
         <h1>Doing</h1>
 
-        {listaTask.map((card) => {
+        {lista.map((card, index) => {
           if (card.status == "Doing") {
-            return <Box titulo={card.titulo} descrição={card.descrição} />;
+            return (
+              <Box
+                titulo={card.titulo}
+                descrição={card.descrição}
+                excluir={excluir}
+                index={index}
+              />
+            );
           }
         })}
       </div>
 
       <div className={styles.column}>
         <h1>Done</h1>
-        
-        {listaTask.map((card) => {
+
+        {lista.map((card, index) => {
           if (card.status == "Done") {
-            return <Box titulo={card.titulo} descrição={card.descrição} />;
+            return (
+              <Box
+                titulo={card.titulo}
+                descrição={card.descrição}
+                excluir={excluir}
+                index={index}
+              />
+            );
           }
         })}
       </div>
