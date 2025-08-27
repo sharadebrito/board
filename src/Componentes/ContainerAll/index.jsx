@@ -6,7 +6,7 @@ export function ContainerAll() {
   return (
     <div className={styles.all}>
       <Header />
-      <ContainerBoard/>
+      <ContainerBoard />
     </div>
   );
 }

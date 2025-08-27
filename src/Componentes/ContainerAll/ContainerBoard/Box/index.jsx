@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-export function Box({ titulo, descrição, excluir, index }) {
+export function Box({ titulo, descricao, excluir, index, mudarStatus }) {
   return (
     <div className={styles.box}>
       <div className={styles.titulo}>
@@ -10,14 +10,28 @@ export function Box({ titulo, descrição, excluir, index }) {
         </button>
       </div>
 
-      <p>{descrição}</p>
+      <p>{descricao}</p>
 
       <div className={styles.buttons}>
-        <button className={styles.toDo}>To Do</button>
-        <button className={styles.doing}>Doing</button>
-        <button className={styles.done}>Done</button>
+        <button
+          className={styles.toDo}
+          onClick={() => mudarStatus(index, "To Do")}
+        >
+          To Do
+        </button>
+        <button
+          className={styles.doing}
+          onClick={() => mudarStatus(index, "Doing")}
+        >
+          Doing
+        </button>
+        <button
+          className={styles.done}
+          onClick={() => mudarStatus(index, "Done")}
+        >
+          Done
+        </button>
       </div>
     </div>
   );
 }
-
