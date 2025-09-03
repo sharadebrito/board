@@ -1,7 +1,7 @@
 #### Task Flow
 Repositório criado para gerenciar tarefas de forma prática e eficiente, desenvolvido como projeto de estudo em Análise e Desenvolvimento de Sistemas.
 
-⚙️ Tecnologias utilizadas  
+⚙️ Tecnologias utilizadas:  
 ⚛️ React  
 ⚡ Vite  
 ⚡ JavaScript 
@@ -11,7 +11,7 @@ Repositório criado para gerenciar tarefas de forma prática e eficiente, desenv
 #### Task Flow 
 Repository created to manage tasks in a practical and efficient way, developed as a study project in Systems Analysis and Development.
 
-⚙️ Technologies used  
+⚙️ Technologies used:  
 ⚛️ React  
 ⚡ Vite  
 ⚡ JavaScript
