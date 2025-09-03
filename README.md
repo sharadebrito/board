@@ -4,7 +4,7 @@ Repositório criado para gerenciar tarefas de forma prática e eficiente, desenv
 ⚙️ Tecnologias utilizadas  
 ⚛️ React  
 ⚡ Vite  
-🔷 TypeScript  
+⚡ JavaScript 
 🎨 CSS Modules  
 🧪 Jest / Testing Library  
 
@@ -14,6 +14,6 @@ Repository created to manage tasks in a practical and efficient way, developed a
 ⚙️ Technologies used  
 ⚛️ React  
 ⚡ Vite  
-🔷 TypeScript  
+⚡ JavaScript
 🎨 CSS Modules  
 🧪 Jest / Testing Library
